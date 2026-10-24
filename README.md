@@ -9,29 +9,8 @@ This project leverages a large dataset containing over 416,000 text samples to c
 ## 🚀 Live Demo & Deployment
 The application is designed to run via a Streamlit dashboard. 
 
-### ⚡ Quick Colab Preview (via ngrok)
-You can host and preview this application directly out of Google Colab using **ngrok** to tunnel the port. 
-
-1. Install dependencies & `pyngrok`:
-   ```bash
-   pip install streamlit joblib scikit-learn pyngrok
-   ```
-2. Set up your authentication token and execute the background process:
-   ```python
-   from pyngrok import ngrok
-   import subprocess
-   import sys
-
-   # Authenticate and run
-   ngrok.set_auth_token("YOUR_NGROK_AUTH_TOKEN")
-   subprocess.Popen([sys.executable, "-m", "streamlit", "run", "app.py"])
-
-   # Create public tunnel
-   public_url = ngrok.connect(8501)
-   print(f"Streamlit App URL: {public_url}")
-   ```
-
----
+### ⚡ Quick Preview (via Streamlit)
+You can view this on know-your-emotions.streamlit.app and test it. Thanks, Streamlit, for helping us deploy the app!
 
 ## 📊 Dataset
 The model is trained on the popular **Emotions Dataset** by *Nelgiriyewithana* via Kaggle. It contains highly unbalanced categories:
